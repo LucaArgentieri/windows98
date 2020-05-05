@@ -9,12 +9,16 @@ https://win98icons.alexmeub.com/*/
     margin: 0;
     box-sizing: border-box;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 body {
     background-color: var(--green98);
     height: 100vh;
 }
 .container {
-    height: 96.5%;
+    height: auto;
 }
 footer {
     display: flex;
@@ -42,10 +46,35 @@ footer {
     align-items: center;
 }
 .separatore {
-    height: 20px;
+    height: 21px;
     width: 1px;
-    background-color: var(--grey98);
     margin-left: 2px;
     box-shadow: 0px 0px 1px 2px var(--grey98);
-    border-right: 1px solid var(--darkgrey98);
+    background: linear-gradient(90deg,  rgba(190,190,190,1) 0%, rgba(126,126,126,1) 100%);
+}
+.colonnina {
+    background: linear-gradient(90deg, rgba(255,255,255) 0%, rgba(126,126,126,1) 100%);
+    width: 3px;
+    height: 15px;
+    margin-left: 2px;
+    margin-right: 5px;
+}
+.box-icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;   
+    align-items: center;
+}
+.box-icons button {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 10px;
+}
+.icons {
+    height: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+a:focus {
+    outline: 1px dotted black;
 }
