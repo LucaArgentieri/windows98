@@ -1,0 +1,51 @@
+/* https://lospec.com/palette-list/microsoft-windows 
+https://win98icons.alexmeub.com/*/
+@font-face {
+    font-family: "font98";
+    src: url(font/W95FA.otf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--green98);
+    height: 100vh;
+}
+.container {
+    height: 96.5%;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--grey98);
+    height: auto;
+    margin-top: auto;
+}
+.btnstart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "font98";
+    font-size: 15px;
+    font-style: bold;
+}
+.btnstart img {
+    height: 25px;
+    margin-right: 5px;
+}
+.container-separatore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separatore {
+    height: 20px;
+    width: 1px;
+    background-color: var(--grey98);
+    margin-left: 2px;
+    box-shadow: 0px 0px 1px 2px var(--grey98);
+    border-right: 1px solid var(--darkgrey98);
+}
