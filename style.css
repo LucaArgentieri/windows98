@@ -28,6 +28,12 @@ html {
     display: flex;
     flex-direction: column;
 }
+@media(max-width:900px){
+    .container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
 .container-sezioni {
     display: flex;
     flex-direction: column;
@@ -42,7 +48,6 @@ html {
     width: auto;
     margin-bottom: 5px;
 }
-
 
 
 
@@ -135,4 +140,23 @@ footer {
 }
 a:focus {
     outline: 1px dotted black;
+}
+.container-sezioni-fine {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.container-orario {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-top: 1px solid rgba(126,126,126,1);
+    border-left: 1px solid rgba(126,126,126,1);
+    border-bottom: 1px solid rgba(255,255,255);
+    border-right: 1px solid rgba(255,255,255);
+    padding-top: 2px;
 }
