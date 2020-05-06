@@ -56,8 +56,26 @@ html {
 
 
 
-
-
+/* Modali */
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal {
+  margin-top: 100px;
+  display: none; /* Hidden by default */
+  justify-content: center;
+  position: absolute; /* Stay in place */
+  top: 0;
+  z-index: 1; /* Sit on top */
+  width: 500px; /* Full width */
+}
+@media(max-width:900px){
+    .modal {
+        width: 300px;
+    }
+}
 
 
 
@@ -150,7 +168,7 @@ a:focus {
 .container-orario {
     display: flex;
     align-items: center;
-    width: 100px;
+    width: 120px;
     height: 20px;
     margin-left: 3px;
     margin-right: 3px;
