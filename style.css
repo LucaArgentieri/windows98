@@ -48,6 +48,14 @@ html {
     width: auto;
     margin-bottom: 5px;
 }
+.chrome img{
+    height: 40px;
+    width: 40px;
+}
+.explorer {
+    color: black;
+    margin-top: 10px;
+}
 
 
 
@@ -76,9 +84,33 @@ html {
         width: 300px;
     }
 }
-
-
-
+.height-cestino {
+    height: 300px;
+}
+.white-box {
+    width: auto;
+    height: 250px;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-right: var(--grey98) 1px solid;
+    border-bottom: var(--grey98) 1px solid;
+    background-color: white;
+}
+.white-box-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.white-box-grid__box1 {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 250px;
+    width: 200px;
+}
+@media(max-width:900px){
+    .white-box-grid__box1 {
+        width: 100px;
+    }
+}
 
 
 
