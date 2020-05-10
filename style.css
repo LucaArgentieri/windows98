@@ -70,6 +70,7 @@ html {
 
 
 /* Modali */
+
 .modal-content {
     display: flex;
     justify-content: center;
@@ -100,6 +101,23 @@ html {
     border-right: var(--grey98) 1px solid;
     border-bottom: var(--grey98) 1px solid;
     background-color: white;
+}
+.mycomputer h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: "font98";
+}
+.mycomputer p {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: black;
+    font-family: "font98";
+}
+.mycomputer strong {
+    color: blue;
+    font-size: 15px;
 }
 .white-box-grid {
     display: grid;
@@ -158,9 +176,24 @@ html {
     flex-direction: row;
     margin-left: 50px;
 }
-
-
-
+.modal#chromeModal {
+    width: 300px;
+}
+.chromewindow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.chromewindow p {
+    margin-left: 10px;
+}
+.chromewindow_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
 
 
