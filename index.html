@@ -14,7 +14,7 @@
         <img src="img/risorse.ico" alt="">
     <p>My Computer</p> 
     </a>
-    <a href="" class="container-sezioni">
+    <a id="projects" href="" class="container-sezioni">
         <img src="img/projects.ico" alt="">
     <p>My Projects</p> 
     </a>
@@ -38,7 +38,7 @@
 <!-- Modali -->
 
     <!-- Modal #1 -->
-    <div id="title" class="modal-content">
+    <div class="modal-content">
         <div id="risorseModal" class="modal window">
             <div class="title-bar">
                 <div class="title-bar-text">My Computer</div>
@@ -48,15 +48,29 @@
                   <button aria-label="Close" id="close1"></button>
                 </div>
             </div>
+            <div class="mainoptions">
+                <div class="options">
+                    <div class="colonninaoptions"></div>
+                    <a><p>File</p></a>
+                    <a><p>Edit</p></a>
+                    <a><p>View</p></a>
+                    <a><p>Go</p></a>
+                    <a><p>Favorites</p></a>
+                    <a><p>Help</p></a>
+                </div>
+                <div class="boxnero"><img src="img/black.png" alt=""></div>
+            </div>
+
+
             <div class="window-body">
                 <div class="white-box mycomputer">
                     <h4>Hi! I'm Luca, nice to meet you :)</h4>
                     <p>This is my personal website!
                        As you can see this is Windows 98! <strong> <br> Why this choice?</strong> <br>
                        First of all I wanted to challenge myself and improve my "hard" skills like styling with css or experiment with JavaScript, and secondly because I was born in 1998! <br>
-                       A year full of news like Apple launches the <a target="_blank" href="https://www.youtube.com/watch?v=BiWd8ujtK5k">iMac </a> , the introduction of <a target="_blank" href="https://it.wikipedia.org/wiki/MPEG-4">MPEG-4 (MP4)</a>  and the highest-grossing film : <a target="_blank" href="https://it.wikipedia.org/wiki/Armageddon_-_Giudizio_finale">Armageddon</a>! <br>
+                       A year full of news like Apple launches the <a target="_blank" href="https://www.youtube.com/watch?v=BiWd8ujtK5k">iMac </a> , the introduction of <a target="_blank" href="https://it.wikipedia.org/wiki/MPEG-4">MPEG-4 (MP4)</a>  and the highest-grossing film : <a target="_blank" href="https://it.wikipedia.org/wiki/Armageddon_-_Giudizio_finale">Armageddon</a>. <br>
                        <strong>About me</strong> <br>
-                       I was born in Milan, 
+                       I was born in Milan, between dad's computer and Playstation where I discovered my really passion for the tecnology.
                     </p>
                     
                 </div>
@@ -65,6 +79,66 @@
    </div>
  
    <!-- Modal #2 -->
+   <div class="modal-content">
+    <div id="projectsModal" class="modal window">
+        <div class="title-bar">
+            <div class="title-bar-text">My Projects</div>
+            <div class="title-bar-controls">
+              <button aria-label="Minimize"></button>
+              <button aria-label="Maximize"></button>
+              <button aria-label="Close" id="close2"></button>
+            </div>
+        </div>
+        <div class="mainoptions">
+            <div class="options">
+                <div class="colonninaoptions"></div>
+                <a><p>File</p></a>
+                <a><p>Edit</p></a>
+                <a><p>View</p></a>
+                <a><p>Go</p></a>
+                <a><p>Favorites</p></a>
+                <a><p>Help</p></a>
+            </div>
+            <div class="boxnero"><img src="img/black.png" alt=""></div>
+        </div>
+
+
+        <div class="window-body">
+            <div class="white-box projects">
+                <div class="white-box-grid">
+                    <div class="white-box-grid__box1">
+                        <img src="img/github.png" alt="">
+                        <h4>My projects</h4>
+                        <p>I'm posting all my works in <a target="blank_" href="https://github.com/LucaArgentieri">Github</a></p>
+                        <p>You can find some projects right here</p>
+                    </div>
+                    <div class="white-box-grid__box2">
+                        <div class="container-sezione riga">
+                            <a target="blank_" class="ied" href="https://github.com/LucaArgentieri/covid-19-api-data">
+                                <img src="img/grafico.ico" alt="">
+                            <p>Covid-19 API Project</p> 
+                            </a>
+                            <a class="ied" target="blank_" href="https://mobular.netlify.app/" class="explorer">
+                                <img src="img/razza.png" alt="">
+                            <p>My first website</p> 
+                            </a>
+                            <a class="ied" target="blank_" href="https://mobular.netlify.app/">
+                                <img src="img/blog.png" alt="">
+                            <p>My first blog</p> 
+                            </a>
+                            <a target="blank_" class="ied" href="https://lucaargentieri.github.io/Whatstheweatherliketoday/" class="explorer">
+                                <img src="img/meteo.ico" alt="">
+                            <p>Weather API Project</p> 
+                            </a>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
    <!-- Modal #3 -->
    <!-- Modal #4 -->
    <div class="modal-content">
@@ -77,6 +151,18 @@
               <button aria-label="Close" id="close4"></button>
             </div>
         </div>
+        <div class="mainoptions">
+            <div class="options">
+                <div class="colonninaoptions"></div>
+                <a><p>File</p></a>
+                <a><p>Edit</p></a>
+                <a><p>View</p></a>
+                <a><p>Go</p></a>
+                <a><p>Favorites</p></a>
+                <a><p>Help</p></a>
+            </div>
+            <div class="boxnero"><img src="img/black.png" alt=""></div>
+        </div>
         <div class="window-body">
             <div class="white-box">
                 <div class="white-box-grid">
@@ -87,9 +173,9 @@
                         <p>To permanently remove all items and reclaim disk space click <a href="">Empty Recycle Bin</a></p>
                         <p>To move all items back to their original locations, click <a href="">Restore All</a>.</p>
                     </div>
-                    <div class="white-box-grid__box2">
-                        <div class="container-sezioni riga">
-                        <a id="explorer" href="" class="explorer">
+                    <!-- <div class="white-box-grid__box2">
+                        <div class="container-sezione">
+                        <a id="explorer" href="" class="explorer ied">
                             <img src="img/explorer.png" alt="">
                         <p>Internet Explorer</p> 
                         </a>
@@ -99,6 +185,21 @@
                         <a href="http://edition.cnn.com/TECH/computing/9903/09/removeie.idg/" target="_blank" class="ied"><img src="img/collegamento.png"  alt="">
                             <p>How delete Internet Explorer</p>
                         </a>
+                    </div>
+                    </div> -->
+                    <div class="white-box-grid__box2">
+                        <div class="container-sezione riga">
+                            <a id="explorer" href="" class="explorer ied">
+                                <img src="img/explorer.png" alt="">
+                            <p>Internet Explorer</p> 
+                            </a>
+                            <a href="" class="ied"><img src="img/cartellaexplorr.png"  alt="">
+                                <p>Internet Explorer <br> Directory</p>
+                                </a>
+                                <a href="http://edition.cnn.com/TECH/computing/9903/09/removeie.idg/" target="_blank" class="ied"><img src="img/collegamento.png"  alt="">
+                                    <p>How delete <br> Internet Explorer</p>
+                                </a>
+
                     </div>
                     </div>
                 </div>
@@ -148,7 +249,7 @@
 <div class="separatore"></div>
 <div class="colonnina"></div>
     <div class="box-icons">
-        <a href=""><img class="icons" src="img/outlook_express.ico" alt=""></a>
+        <a href="mailto:Lucaargentieri-98@hotmail.it"><img class="icons" src="img/outlook_express.ico" alt=""></a>
         <a href=""><img class="icons" src="img/desktop.ico" alt=""></a>
         <a href=""><img class="icons" src="img/joystick.ico" alt=""></a>
     </div>

@@ -37,8 +37,26 @@ if (risorseModal.style.display = "block") {
   }
 })
 
+// Modal #2
+let close2 = document.getElementById('close2');
+let projects = document.getElementById('projects')
+let projectsModal = document.getElementById("projectsModal");
+
+
+projects.addEventListener('click', evt => {
+    evt.preventDefault()
+    projectsModal.style.display = "block";
+
+})
+
+close2.addEventListener('click', evt => {
+if (projectsModal.style.display = "block") {
+    projectsModal.style.display = "none";
+  }
+})
+
 // Modal #4
-let close2 = document.getElementById('close4');
+let close4 = document.getElementById('close4');
 let cestino = document.getElementById('cestino')
 let cestinoModal = document.getElementById("cestinoModal");
 
@@ -110,5 +128,8 @@ document.addEventListener('mousemove', function(event) {
         };
         div.style.left = (mousePosition.x + offset[0]) + 'px';
         div.style.top  = (mousePosition.y + offset[1]) + 'px';
+
+
+        div.style.marginTop = '0px'
     }
 }, true);

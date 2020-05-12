@@ -29,12 +29,7 @@ html {
     display: flex;
     flex-direction: column;
 }
-@media(max-width:900px){
-    .container {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-}
+
 .container-sezioni {
     display: flex;
     flex-direction: column;
@@ -44,11 +39,22 @@ html {
     margin-bottom: 10px;
     width: 5%;
     text-align: center;
+
 }
 .container-sezioni img {
     width: auto;
     margin-bottom: 5px;
 }
+.container-sezione {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
 .chrome img{
     height: 40px;
     width: 40px;
@@ -70,7 +76,59 @@ html {
 
 
 /* Modali */
+.mainoptions {
+    display: flex;
+    align-items: center;
+}
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 25px;
+    border-top: 1px solid rgba(255,255,255);
+    border-left: 1px solid rgba(255,255,255);
+    border-bottom: 1px solid rgba(126,126,126,1);
+    border-right: 1px solid rgba(126,126,126,1);
+    width: 90%;
+}
+.boxnero {
+    background-color: black;
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxnero img {
+    height: 30px;
+}
+.options a {
+    margin-right: 20px;
+    color: black;
+    position: relative;
+    cursor: pointer;
+}
+.options a:after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    display: block;
+    border-bottom: 1px black solid;    
 
+}
+
+.colonninaoptions {
+    background: linear-gradient(90deg, rgba(255,255,255) 0%, rgba(126,126,126,1) 100%);
+    width: 3px;
+    height: 20px;
+    margin-left: 2px;
+    margin-right: 5px;
+}
 .modal-content {
     display: flex;
     justify-content: center;
@@ -85,22 +143,21 @@ html {
   z-index: 1; /* Sit on top */
   width: 500px; /* Full width */
 }
-@media(max-width:900px){
-    .modal {
-        width: 300px;
-    }
-}
+
 .height-cestino {
-    height: 300px;
+    height: auto;
 }
 .white-box {
-    width: auto;
-    height: 250px;
     border-top: black 1px solid;
     border-left: black 1px solid;
     border-right: var(--grey98) 1px solid;
     border-bottom: var(--grey98) 1px solid;
     background-color: white;
+}
+.mycomputer {
+    height: auto;
+    padding-bottom: 10px;
+
 }
 .mycomputer h4 {
     text-align: center;
@@ -146,35 +203,21 @@ html {
     font-family: "font98";
     margin-bottom: 10px;
 }
-@media(max-width:900px){
-    .white-box-grid__box1 {
-        width: 100px;
-    }
-    .white-box-grid__box1 p{
-        margin-left: 10px;
-    }
-    .white-box-grid__box1 h4{
-        margin-left: 10px;
-    }
-    .white-box-grid__box1 img{
-        margin-left: 10px;
-    }
-    .white-box-grid__box2 img {
-        max-width: 100%;
-        height: auto;
-    }
-}
+
 .white-box-grid__box2 {
-    flex-direction: row;
     margin-left: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .white-box-grid__box2 a {
     color: black;
 }
 .riga {
-    display: flex;
-    flex-direction: row;
-    margin-left: 50px;
+    margin-left: -30px;
+}
+.riga img {
+    height: 48px;
+    width: 48px;
 }
 .modal#chromeModal {
     width: 300px;
@@ -194,6 +237,13 @@ html {
     align-items: center;
     margin-bottom: 20px;
 }
+.projects {
+    height: 250px;
+}
+.projects h4 {
+    font-family: "font98";
+    margin-left: -26px;
+}
 
 
 
@@ -203,10 +253,7 @@ html {
 
 
 
-
-
-
-
+/* Footer */
 footer {
     position: fixed;
     left: 0;
@@ -287,4 +334,50 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255);
     border-right: 1px solid rgba(255,255,255);
     padding-top: 2px;
+}
+
+
+@media(max-width:900px){
+    .modal {
+        width: 300px;
+    }
+    .container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .white-box-grid__box1 {
+        width: 100px;
+    }
+    .white-box-grid__box1 p{
+        margin-left: 10px;
+    }
+    .white-box-grid__box1 h4{
+        margin-left: 10px;
+    }
+    .white-box-grid__box1 img{
+        margin-left: 10px;
+    }
+    .white-box-grid__box2 img {
+        max-width: 100%;
+        height: auto;
+    }
+    .boxnero {
+        display: none;
+    }
+    .options {
+        width: 100%;
+        margin-right: 10px;
+    }
+    .container-sezione {
+        flex-direction: column;
+    }
+    .container-sezione img {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media(max-width:350px) {
+    .modal {
+        margin-top: 50px;
+    }
 }
