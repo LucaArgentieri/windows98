@@ -215,7 +215,6 @@ console.log(browserDetectato)
 
 
 // Change Browser Logo
-let classeChrome = document.querySelector('chrome')
 let imgChrome = document.getElementById('imgChrome')
 let parChrome = document.getElementById('parChrome')
 

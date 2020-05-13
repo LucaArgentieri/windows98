@@ -237,12 +237,8 @@ html {
     align-items: center;
     margin-bottom: 20px;
 }
-.projects {
-    height: 250px;
-}
 .projects h4 {
-    font-family: "font98";
-    margin-left: -26px;
+    margin-left: -10px;
 }
 
 
@@ -375,9 +371,14 @@ a:focus {
         width: 30px;
         height: 30px;
     }
+    .mycomputer h4 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 @media(max-width:350px) {
-    .modal {
-        margin-top: 50px;
+    .modallow {
+        margin-top: 5px;
+
     }
 }
