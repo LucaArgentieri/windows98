@@ -247,5 +247,6 @@ textChrome.innerHTML = `You are already in ${browserDetectato}`
 // New Tab
 let newtab = document.getElementById('newtab')
 newtab.addEventListener('click', evt => {
+    evt.preventDefault()
     window.open('https://www.google.it/')
 })
