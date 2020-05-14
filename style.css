@@ -233,9 +233,12 @@ html {
 }
 .chromewindow_button {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 20px;
+}
+.chromewindow_button button {
+    cursor: pointer;
 }
 .projects h4 {
     margin-left: -10px;

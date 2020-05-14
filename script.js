@@ -218,6 +218,7 @@ console.log(browserDetectato)
 let imgChrome = document.getElementById('imgChrome')
 let parChrome = document.getElementById('parChrome')
 
+
 if(browserName === 'Chrome') {
     imgChrome.setAttribute('src','img/chrome.png')
     parChrome.innerHTML=browserName
@@ -238,3 +239,13 @@ if(browserName === 'Safari') {
     imgChrome.setAttribute('src','img/safari.png')
     parChrome.innerHTML=browserName
 }
+
+// Error message
+let textChrome = document.getElementById('textChrome')
+textChrome.innerHTML = `You are already in ${browserDetectato}`
+
+// New Tab
+let newtab = document.getElementById('newtab')
+newtab.addEventListener('click', evt => {
+    window.open('https://www.google.it/')
+})
