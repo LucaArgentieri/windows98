@@ -52,6 +52,30 @@ if (projectsModal.style.display = "block") {
   }
 })
 
+// Modal #3
+let close3 = document.getElementById('close3');
+let cmd = document.getElementById('cmd')
+let cmdModal = document.getElementById("cmdModal");
+
+
+cmd.addEventListener('click', evt => {
+    evt.preventDefault()
+    cmdModal.style.display = "block";
+
+})
+
+close3.addEventListener('click', evt => {
+if (cmdModal.style.display = "block") {
+    cmdModal.style.display = "none";
+  }
+})
+
+
+let cmdText = document.getElementById('cmdtext')
+cmdText.addEventListener('click', evt => {
+    
+})
+
 // Modal #4
 let close4 = document.getElementById('close4');
 let cestino = document.getElementById('cestino')
