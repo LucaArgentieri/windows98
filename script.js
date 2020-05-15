@@ -118,7 +118,7 @@ chromeButton.addEventListener('click', evt => {
       }
 })
 
-// Windows move
+// Modal 1 Windows move
 var mousePosition;
 var offset = [0,0];
 var div = document.getElementById('risorseModal')
@@ -154,6 +154,173 @@ document.addEventListener('mousemove', function(event) {
         div.style.marginTop = '0px'
     }
 }, true);
+
+// Modal 2 Windows move
+var mousePosition2;
+var offset2 = [0,0];
+var div2 = document.getElementById('projectsModal')
+var isDown2 = false;
+
+
+
+div2.addEventListener('mousedown', function(e) {
+    isDown2 = true;
+    offset2 = [
+        div2.offsetLeft - e.clientX,
+        div2.offsetTop - e.clientY
+    ];
+}, true);
+
+document.addEventListener('mouseup', function() {
+    isDown2 = false;
+}, true);
+
+document.addEventListener('mousemove', function(event) {
+    event.preventDefault();
+    if (isDown2) {
+        mousePosition2 = {
+
+            x : event.clientX,
+            y : event.clientY
+
+        };
+        div2.style.left = (mousePosition2.x + offset2[0]) + 'px';
+        div2.style.top  = (mousePosition2.y + offset2[1]) + 'px';
+
+
+        div2.style.marginTop = '0px'
+    }
+}, true);
+
+// Modal 3 Windows move
+var mousePosition3;
+var offset3 = [0,0];
+var div3 = document.getElementById('cmdModal')
+var isDown3 = false;
+
+
+
+div3.addEventListener('mousedown', function(e) {
+    isDown3 = true;
+    offset3 = [
+        div3.offsetLeft - e.clientX,
+        div3.offsetTop - e.clientY
+    ];
+}, true);
+
+document.addEventListener('mouseup', function() {
+    isDown3 = false;
+}, true);
+
+document.addEventListener('mousemove', function(event) {
+    event.preventDefault();
+    if (isDown3) {
+        mousePosition3 = {
+
+            x : event.clientX,
+            y : event.clientY
+
+        };
+        div3.style.left = (mousePosition3.x + offset3[0]) + 'px';
+        div3.style.top  = (mousePosition3.y + offset3[1]) + 'px';
+
+
+        div3.style.marginTop = '0px'
+    }
+}, true);
+
+// Modal 4 Windows move
+var mousePosition4;
+var offset4 = [0,0];
+var div4 = document.getElementById('cestinoModal')
+var isDown4 = false;
+
+
+
+div4.addEventListener('mousedown', function(e) {
+    isDown4 = true;
+    offset4 = [
+        div4.offsetLeft - e.clientX,
+        div4.offsetTop - e.clientY
+    ];
+}, true);
+
+document.addEventListener('mouseup', function() {
+    isDown4 = false;
+}, true);
+
+document.addEventListener('mousemove', function(event) {
+    event.preventDefault();
+    if (isDown4) {
+        mousePosition4 = {
+
+            x : event.clientX,
+            y : event.clientY
+
+        };
+        div4.style.left = (mousePosition4.x + offset4[0]) + 'px';
+        div4.style.top  = (mousePosition4.y + offset4[1]) + 'px';
+
+
+        div4.style.marginTop = '0px'
+    }
+}, true);
+
+// Modal 5 Windows move
+var mousePosition5;
+var offset5 = [0,0];
+var div5 = document.getElementById('chromeModal')
+var isDown5 = false;
+
+
+
+div5.addEventListener('mousedown', function(e) {
+    isDown5 = true;
+    offset5 = [
+        div5.offsetLeft - e.clientX,
+        div5.offsetTop - e.clientY
+    ];
+}, true);
+
+document.addEventListener('mouseup', function() {
+    isDown5 = false;
+}, true);
+
+document.addEventListener('mousemove', function(event) {
+    event.preventDefault();
+    if (isDown5) {
+        mousePosition5 = {
+
+            x : event.clientX,
+            y : event.clientY
+
+        };
+        div5.style.left = (mousePosition5.x + offset5[0]) + 'px';
+        div5.style.top  = (mousePosition5.y + offset5[1]) + 'px';
+
+
+        div5.style.marginTop = '0px'
+    }
+}, true);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
