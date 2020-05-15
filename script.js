@@ -21,10 +21,17 @@ setInterval(updateTime, 1000);
 let close1 = document.getElementById('close1');
 let risorse = document.getElementById('risorse')
 let risorseModal = document.getElementById("risorseModal");
+let width = window.innerWidth
 
 risorse.addEventListener('click', evt => {
     evt.preventDefault()
     risorseModal.style.display = "block";
+
+    if(width > 900) {
+        risorseModal.style.left = "200px"
+        risorseModal.style.top = "200px"
+    }
+
 
 })
 
@@ -32,6 +39,11 @@ close1.addEventListener('click', evt => {
 if (risorseModal.style.display = "block") {
     risorseModal.style.display = "none";
   }
+})
+
+// Modal on click z-index
+risorseModal.addEventListener('click', evt => {
+    risorseModal.style.zIndex = + "1"
 })
 
 // Modal #2
@@ -44,6 +56,11 @@ projects.addEventListener('click', evt => {
     evt.preventDefault()
     projectsModal.style.display = "block";
 
+
+    if(width > 900){
+        projectsModal.style.left = "550px"
+    }
+
 })
 
 close2.addEventListener('click', evt => {
@@ -51,6 +68,15 @@ if (projectsModal.style.display = "block") {
     projectsModal.style.display = "none";
   }
 })
+
+
+// Modal on click z-index
+projectsModal.addEventListener('click', evt => {
+    projectsModal.style.zIndex  + "1"
+})
+
+
+
 
 // Modal #3
 let close3 = document.getElementById('close3');
@@ -61,6 +87,10 @@ let cmdModal = document.getElementById("cmdModal");
 cmd.addEventListener('click', evt => {
     evt.preventDefault()
     cmdModal.style.display = "block";
+
+    if(width > 900){
+    cmdModal.style.left = "150px"
+    }
 
 })
 
@@ -84,6 +114,10 @@ let cestinoModal = document.getElementById("cestinoModal");
 cestino.addEventListener('click', evt => {
     evt.preventDefault()
     cestinoModal.style.display = "block";
+
+    if(width > 900){
+    cestinoModal.style.top = "150px"
+    }
 
 })
 
@@ -394,7 +428,6 @@ if (isNaN(majorVersion)) {
 
 
 let browserDetectato = browserName
-console.log(browserDetectato)
 
 // console.log(''
 // +'Browser name  = '+browserName+''
