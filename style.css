@@ -333,6 +333,26 @@ footer {
 a:focus {
     outline: 1px dotted black;
 }
+.btn-modali {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-modali button {
+    padding: 0px;
+    width: 130px;
+    text-align: left;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    display: none;
+}
+.btn-modali img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
 .container-sezioni-fine {
     display: flex;
     width: 100%;

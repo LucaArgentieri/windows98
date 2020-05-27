@@ -18,7 +18,9 @@ setInterval(updateTime, 1000);
 
 
 // Modal #1
-let close1 = document.getElementById('close1');
+let close1 = document.getElementById('close1')
+let min1 = document.getElementById('min1')
+let btn1 = document.getElementById('btn_1')
 let risorse = document.getElementById('risorse')
 let risorseModal = document.getElementById("risorseModal");
 let width = window.innerWidth
@@ -26,20 +28,41 @@ let width = window.innerWidth
 risorse.addEventListener('click', evt => {
     evt.preventDefault()
     risorseModal.style.display = "block";
+    btn1.style.display = "flex"
 
     if(width > 900) {
         risorseModal.style.left = "200px"
         risorseModal.style.top = "200px"
     }
 
+})
 
+min1.addEventListener('click',evt => {
+    if (risorseModal.style.display = "block") {
+    risorseModal.style.display = "none";
+  }
 })
 
 close1.addEventListener('click', evt => {
 if (risorseModal.style.display = "block") {
     risorseModal.style.display = "none";
+    btn1.style.display = "none"
   }
 })
+// App bar modal#1
+btn1.addEventListener('click', evt => {
+    if(width > 900) {
+        risorseModal.style.left = "200px"
+        risorseModal.style.top = "200px"
+    }
+
+    if(risorseModal.style.display = risorseModal.style.display === "block") {
+        risorseModal.style.display = "none"
+    } else {
+        risorseModal.style.display = "block"; 
+    }
+})
+
 
 // Modal on click z-index
 risorseModal.addEventListener('click', evt => {
@@ -50,30 +73,58 @@ risorseModal.addEventListener('click', evt => {
 let close2 = document.getElementById('close2');
 let projects = document.getElementById('projects')
 let projectsModal = document.getElementById("projectsModal");
+let btn2 = document.getElementById('btn_2')
+let min2 = document.getElementById('min2')
 
 
 projects.addEventListener('click', evt => {
     evt.preventDefault()
     projectsModal.style.display = "block";
+    btn2.style.display = "flex"
 
 
     if(width > 900){
         projectsModal.style.left = "550px"
     }
-
 })
 
-close2.addEventListener('click', evt => {
-if (projectsModal.style.display = "block") {
+min2.addEventListener('click',evt => {
+    if (projectsModal.style.display = "block") {
     projectsModal.style.display = "none";
   }
 })
 
 
-// Modal on click z-index
-projectsModal.addEventListener('click', evt => {
-    projectsModal.style.zIndex  + "1"
+close2.addEventListener('click', evt => {
+if (projectsModal.style.display = "block") {
+    projectsModal.style.display = "none";
+    btn2.style.display = "none"
+  }
+  
 })
+
+
+// App bar modal#2
+btn2.addEventListener('click', evt => {
+    if(width > 900) {
+        projectsModal.style.left = "200px"
+        projectsModal.style.top = "200px"
+    }
+
+    if(projectsModal.style.display = projectsModal.style.display === "block") {
+        projectsModal.style.display = "none"
+    } else {
+        projectsModal.style.display = "block"; 
+        
+    }
+})
+
+
+
+// Modal on click z-index
+// projectsModal.addEventListener('click', evt => {
+//     projectsModal.style.zIndex  + "1"
+// })
 
 
 
