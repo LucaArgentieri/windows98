@@ -411,13 +411,14 @@ let chromeButton = document.getElementById('chrome_button')
 let chromee = document.getElementById('chrome')
 let chromeModal = document.getElementById("chromeModal");
 let btn5 = document.getElementById('btn5')
+var audio = new Audio('audio/troll.mp3');
+
 
 chromee.addEventListener('click', evt => {
     evt.preventDefault()
     chromeModal.style.display = "block";
     btn5.style.display = "flex"
-
-    let audio = new Audio('audio/troll.mp3');
+    audio.volume = 0.2;
     audio.play();
 })
 
@@ -425,7 +426,7 @@ close5.addEventListener('click', evt => {
     if (chromeModal.style.display = "block") {
         chromeModal.style.display = "none";
         btn5.style.display = "none"
-
+        audio.pause();
       }
 })
 
@@ -433,6 +434,8 @@ chromeButton.addEventListener('click', evt => {
     if (chromeModal.style.display = "block") {
         chromeModal.style.display = "none";
         btn5.style.display = "none"
+        audio.pause();
+
       }
 })
 

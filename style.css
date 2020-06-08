@@ -279,7 +279,7 @@ footer {
     display: flex;
     flex-direction: row;
     background-color: var(--grey98);
-    height: auto;
+    height: 26px;
     margin-top: auto;
 }
 .btnstart {
