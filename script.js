@@ -69,6 +69,51 @@ risorseModal.addEventListener('click', evt => {
     risorseModal.style.zIndex = + "1"
 })
 
+// Modal 1 Windows move
+var mousePosition;
+var offset = [0,0];
+var div = document.getElementById('risorseModal')
+var isDown = false;
+
+
+
+div.addEventListener('mousedown', function(e) {
+    isDown = true;
+    offset = [
+        div.offsetLeft - e.clientX,
+        div.offsetTop - e.clientY
+    ];
+}, true);
+
+document.addEventListener('mouseup', function() {
+    isDown = false;
+}, true);
+
+document.addEventListener('mousemove', function(event) {
+    event.preventDefault();
+    if (isDown) {
+        mousePosition = {
+
+            x : event.clientX,
+            y : event.clientY
+
+        };
+        div.style.left = (mousePosition.x + offset[0]) + 'px';
+        div.style.top  = (mousePosition.y + offset[1]) + 'px';
+
+
+        div.style.marginTop = '0px'
+    }
+}, true);
+
+
+
+
+
+
+
+
+
 // Modal #2
 let close2 = document.getElementById('close2');
 let projects = document.getElementById('projects')
@@ -128,118 +173,6 @@ btn2.addEventListener('click', evt => {
 
 
 
-
-// Modal #3
-let close3 = document.getElementById('close3');
-let cmd = document.getElementById('cmd')
-let cmdModal = document.getElementById("cmdModal");
-
-
-cmd.addEventListener('click', evt => {
-    evt.preventDefault()
-    cmdModal.style.display = "block";
-
-    if(width > 900){
-    cmdModal.style.left = "150px"
-    }
-
-})
-
-close3.addEventListener('click', evt => {
-if (cmdModal.style.display = "block") {
-    cmdModal.style.display = "none";
-  }
-})
-
-
-let cmdText = document.getElementById('cmdtext')
-cmdText.addEventListener('click', evt => {
-    
-})
-
-// Modal #4
-let close4 = document.getElementById('close4');
-let cestino = document.getElementById('cestino')
-let cestinoModal = document.getElementById("cestinoModal");
-
-cestino.addEventListener('click', evt => {
-    evt.preventDefault()
-    cestinoModal.style.display = "block";
-
-    if(width > 900){
-    cestinoModal.style.top = "150px"
-    }
-
-})
-
-close4.addEventListener('click', evt => {
-    if (cestinoModal.style.display = "block") {
-        cestinoModal.style.display = "none";
-      }
-})
-
-
-// Modal #5
-let close5 = document.getElementById('close5');
-let chromeButton = document.getElementById('chrome_button')
-let chromee = document.getElementById('chrome')
-let chromeModal = document.getElementById("chromeModal");
-
-chromee.addEventListener('click', evt => {
-    evt.preventDefault()
-    chromeModal.style.display = "block";
-
-})
-
-close5.addEventListener('click', evt => {
-    if (chromeModal.style.display = "block") {
-        chromeModal.style.display = "none";
-      }
-})
-
-chromeButton.addEventListener('click', evt => {
-    if (chromeModal.style.display = "block") {
-        chromeModal.style.display = "none";
-      }
-})
-
-// Modal 1 Windows move
-var mousePosition;
-var offset = [0,0];
-var div = document.getElementById('risorseModal')
-var isDown = false;
-
-
-
-div.addEventListener('mousedown', function(e) {
-    isDown = true;
-    offset = [
-        div.offsetLeft - e.clientX,
-        div.offsetTop - e.clientY
-    ];
-}, true);
-
-document.addEventListener('mouseup', function() {
-    isDown = false;
-}, true);
-
-document.addEventListener('mousemove', function(event) {
-    event.preventDefault();
-    if (isDown) {
-        mousePosition = {
-
-            x : event.clientX,
-            y : event.clientY
-
-        };
-        div.style.left = (mousePosition.x + offset[0]) + 'px';
-        div.style.top  = (mousePosition.y + offset[1]) + 'px';
-
-
-        div.style.marginTop = '0px'
-    }
-}, true);
-
 // Modal 2 Windows move
 var mousePosition2;
 var offset2 = [0,0];
@@ -276,6 +209,66 @@ document.addEventListener('mousemove', function(event) {
         div2.style.marginTop = '0px'
     }
 }, true);
+
+
+
+
+
+
+
+
+
+// Modal #3
+let close3 = document.getElementById('close3');
+let cmd = document.getElementById('cmd')
+let cmdModal = document.getElementById("cmdModal");
+let btn3 = document.getElementById('btn_3')
+let min3 = document.getElementById('min3')
+
+
+
+
+cmd.addEventListener('click', evt => {
+    evt.preventDefault()
+    cmdModal.style.display = "block";
+    btn3.style.display = 'flex'
+
+    if(width > 900){
+    cmdModal.style.left = "150px"
+    }
+
+})
+
+min3.addEventListener('click',evt => {
+    if (cmdModal.style.display = "block") {
+    cmdModal.style.display = "none";
+  }
+})
+
+close3.addEventListener('click', evt => {
+if (cmdModal.style.display = "block") {
+    cmdModal.style.display = "none";
+    btn3.style.display = "none"
+  }
+})
+
+
+
+// App bar modal#3
+btn3.addEventListener('click', evt => {
+    if(width > 900) {
+        cmdModal.style.left = "200px"
+        cmdModal.style.top = "200px"
+    }
+
+    if(cmdModal.style.display = cmdModal.style.display === "block") {
+        cmdModal.style.display = "none"
+    } else {
+        cmdModal.style.display = "block"; 
+        
+    }
+})
+
 
 // Modal 3 Windows move
 var mousePosition3;
@@ -314,6 +307,60 @@ document.addEventListener('mousemove', function(event) {
     }
 }, true);
 
+
+
+
+
+// Modal #4
+let close4 = document.getElementById('close4');
+let cestino = document.getElementById('cestino')
+let cestinoModal = document.getElementById("cestinoModal");
+let btn4 = document.getElementById('btn_4')
+let min4 = document.getElementById('min4')
+
+cestino.addEventListener('click', evt => {
+    evt.preventDefault()
+    cestinoModal.style.display = "block";
+    btn4.style.display = "flex"
+
+    if(width > 900){
+    cestinoModal.style.top = "150px"
+    }
+
+})
+
+min4.addEventListener('click',evt => {
+    if (cestinoModal.style.display = "block") {
+    cestinoModal.style.display = "none";
+  }
+})
+
+
+close4.addEventListener('click', evt => {
+    if (cestinoModal.style.display = "block") {
+        cestinoModal.style.display = "none";
+        btn4.style.display = "none"
+
+      }
+})
+
+btn4.addEventListener('click', evt => {
+    if(width > 900) {
+        cestinoModal.style.left = "200px"
+        cestinoModal.style.top = "200px"
+    }
+
+    if(cestinoModal.style.display = cestinoModal.style.display === "block") {
+        cestinoModal.style.display = "none"
+    } else {
+        cestinoModal.style.display = "block"; 
+        
+    }
+})
+
+
+
+
 // Modal 4 Windows move
 var mousePosition4;
 var offset4 = [0,0];
@@ -350,6 +397,46 @@ document.addEventListener('mousemove', function(event) {
         div4.style.marginTop = '0px'
     }
 }, true);
+
+
+
+
+
+
+
+
+// Modal #5
+let close5 = document.getElementById('close5');
+let chromeButton = document.getElementById('chrome_button')
+let chromee = document.getElementById('chrome')
+let chromeModal = document.getElementById("chromeModal");
+let btn5 = document.getElementById('btn5')
+
+chromee.addEventListener('click', evt => {
+    evt.preventDefault()
+    chromeModal.style.display = "block";
+    btn5.style.display = "flex"
+
+    let audio = new Audio('audio/troll.mp3');
+    audio.play();
+})
+
+close5.addEventListener('click', evt => {
+    if (chromeModal.style.display = "block") {
+        chromeModal.style.display = "none";
+        btn5.style.display = "none"
+
+      }
+})
+
+chromeButton.addEventListener('click', evt => {
+    if (chromeModal.style.display = "block") {
+        chromeModal.style.display = "none";
+        btn5.style.display = "none"
+      }
+})
+
+
 
 // Modal 5 Windows move
 var mousePosition5;
