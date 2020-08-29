@@ -76,6 +76,7 @@ html {
 
 
 /* Modali */
+
 .mainoptions {
     display: flex;
     align-items: center;
@@ -264,8 +265,9 @@ textarea {
     overflow: hidden;
     padding: 0;
 }
-
-
+h4.social_sub {
+    margin-left: -22px;
+}
 
 
 
