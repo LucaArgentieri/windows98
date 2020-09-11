@@ -1,0 +1,24 @@
+{
+  "name": "windows98",
+  "version": "1.0.0",
+  "description": "Hey Everybody!",
+  "main": "script.js",
+  "dependencies": {
+    "98.css": "^0.1.11",
+    "sass": "^1.26.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucaArgentieri/windows98.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucaArgentieri/windows98/issues"
+  },
+  "homepage": "https://github.com/LucaArgentieri/windows98#readme"
+}
